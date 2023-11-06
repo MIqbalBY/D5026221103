@@ -1,0 +1,27 @@
+h3
+{
+    color       : rgb(175, 2, 255);
+}
+
+p
+{
+    color       : #e21111;
+    text-align  : justify;
+}
+
+body
+{
+    background  : hsl(333, 42%, 10%);
+}
+
+.ratakanan
+{
+    text-align  : right;
+    color       : gold;
+    font-weight : bold;
+}
+
+.kotak1
+{
+    border-style    : solid;
+}

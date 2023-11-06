@@ -77,3 +77,6 @@ use Illuminate\Support\Facades\Route;
     {
     return view('week10');
     });
+
+    Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
+    Route::get('show', 'App\Http\Controllers\DosenController@showBlog');

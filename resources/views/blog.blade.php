@@ -21,5 +21,7 @@
         <p>
             Ini adalah view blog, ada di route blog.
         </p>
+
+        <a href = "/pegawai/{{ date('D M Y') }}"> Klik disini </a>
     </body>
 </html>

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-    // Welcome (Week 8)
+    // Welcome (Week 8/Personal Website)
     Route::get('/', function ()
     {
         return view('welcome');
@@ -36,7 +36,7 @@ use Illuminate\Support\Facades\Route;
     return view('week2');
     });
 
-    // Week 3
+    // Week 3 (Linktree)
     Route::get('week3', function()
     {
     return view('week3');
@@ -61,15 +61,16 @@ use Illuminate\Support\Facades\Route;
     });
 
     // Week 7
-    Route::get('week7', function()
+    Route::get('week7',
+    function()
     {
     return view('week7');
     });
 
-    // Week 9
-    Route::get('week9', function()
+    // Week 9 (Blog)
+    Route::get('blog2', function()
     {
-    return view('week9');
+    return view('blog');
     });
 
     // Week 10
@@ -80,3 +81,13 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
     Route::get('show', 'App\Http\Controllers\DosenController@showBlog');
+
+    Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
+
+    Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
+    Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+
+    // Route Blog
+    Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+    Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
+    Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');

@@ -82,7 +82,7 @@ use Illuminate\Support\Facades\Route;
     Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
     Route::get('show', 'App\Http\Controllers\DosenController@showBlog');
 
-    Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
+    // Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@showNama');
 
     Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
     Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
@@ -91,3 +91,11 @@ use Illuminate\Support\Facades\Route;
     Route::get('/blog', 'App\Http\Controllers\BlogController@home');
     Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
     Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
+
+    // Route CRUD
+    Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
+    Route::get('/pegawai/tambah', 'App\Http\Controllers\PegawaiController@tambah');
+    Route::post('/pegawai/store', 'App\Http\Controllers\PegawaiController@store');
+    Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
+    Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
+    Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');

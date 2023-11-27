@@ -1,13 +1,6 @@
-<!DOCTYPE html>
+@extends('master2')
 
-<html>
-    <head>
-	    <title>
-            Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com
-        </title>
-    </head>
-
-    <body>
+@section('konten')
         <h2>
             <a href = "https://www.malasngoding.com"> www.malasngoding.com </a>
         </h2>
@@ -21,15 +14,33 @@
         <br/>
         <br/>
 
-        <form action = "/pegawai/store" method = "post">
+        <form action = "/pegawai/store" method = "post" class = "form-horizontal">
             {{ csrf_field() }}
 
-            Nama <input type = "text" name = "nama" required = "required"> <br/>
-            Jabatan <input type = "text" name = "jabatan" required = "required"> <br/>
-            Umur <input type = "number" name = "umur" required = "required"> <br/>
-            Alamat <textarea name = "alamat" required = "required"></textarea> <br/>
+            <label for = "nama" class = "col-sm-2 control-label"> Nama </label>
+            <div class = "col-sm-4">
+               <input name = "nama" type = "text" class = "form-control" id = "nama" placeholder = "Masukkan nama pegawai">
+            </div>
 
-            <input type = "submit" value = "Simpan Data">
+            <label for = "jabatan" class = "col-sm-2 control-label"> Jabatan </label>
+            <div class = "col-sm-4">
+               <input name = "jabatan" type = "text" class = "form-control" id = "jabatn" placeholder = "Masukkan jabatan pegawai">
+            </div>
+
+            <label for = "umur" class = "col-sm-2 control-label"> Umur </label>
+            <div class = "col-sm-4">
+               <input name = "umur" type = "text" class = "form-control" id = "umur" placeholder = "Masukkan umur pegawai">
+            </div>
+
+            <label for = "alamat" class = "col-sm-2 control-label"> Alamat </label>
+            <div class = "col-sm-4">
+               <input name = "alamat" type = "text" class = "form-control" id = "alamat" placeholder = "Masukkan alamat pegawai">
+            </div>
+
+            <br>
+            
+            <input type = "submit" class = "btn btn-primary" value = "Simpan Data">
         </form>
+@endsection
     </body>
 </html>

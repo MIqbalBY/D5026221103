@@ -17,6 +17,8 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel = "stylesheet" href = "{{ asset('css/index/styles.css') }}">
     </head>
 
     <body>

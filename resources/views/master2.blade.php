@@ -25,16 +25,20 @@
         <div class = "container">
             <nav class = "navbar navbar-expand-sm bg-dark navbar-dark">
                 <!-- Brand -->
-                <a class = "navbar-brand" href = "#"> 5026221103 - Muhammad Iqbal Baiduri Yamani </a>
+                <a class = "navbar-brand" href = "/"> 5026221103 - Muhammad Iqbal Baiduri Yamani </a>
 
                 <!-- Links -->
                 <ul class = "navbar-nav">
                     <li class = "nav-item">
-                        <a class = "nav-link" href = "#"> Link 1 </a>
+                        <a class = "nav-link" href = "/pegawai"> Pegawai </a>
                     </li>
 
                     <li class = "nav-item">
-                        <a class = "nav-link" href = "#"> Link 2 </a>
+                        <a class = "nav-link" href = "/nilaikuliah"> Soal Latihan EAS Laki-Laki </a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/tugaspraeas"> Tugas Pra EAS </a>
                     </li>
 
                     <!-- Dropdown -->
@@ -45,8 +49,8 @@
 
                         <div class = "dropdown-menu">
                             <a class = "dropdown-item" href = "/pegawai"> Pegawai </a>
-                            <a class = "dropdown-item" href = "#"> Link 2 </a>
-                            <a class = "dropdown-item" href = "#"> Link 3 </a>
+                            <a class = "dropdown-item" href = "/nilaikuliah"> Soal Latihan EAS Laki-Laki </a>
+                            <a class = "dropdown-item" href = "/tugaspraeas"> Tugas Pra EAS </a>
                         </div>
                     </li>
                 </ul>

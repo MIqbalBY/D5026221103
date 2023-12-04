@@ -1,12 +1,10 @@
 @extends('master2')
 
-@section('konten')
-    <h2>
-        <a href = "https://www.malasngoding.com"> www.malasngoding.com </a>
-    </h2>
+@section('title', "Tambah Data Pegawai Baru")
 
+@section('konten')
     <h3>
-        Tambah Pegawai
+        Tambah Data Pegawai Baru
     </h3>
 
     <a href = "/pegawai" class = "btn btn-primary"> Kembali </a>

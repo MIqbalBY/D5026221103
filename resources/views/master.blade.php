@@ -6,6 +6,8 @@
             5026221103 - Muhammad Iqbal Baiduri Yamani
         </title>
 
+        <link rel = "icon" type = "image/x-icon" href = "{{ asset('img/qb.png') }}"/>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -44,7 +46,7 @@
 
             @yield('header')
 
-            @yield('isihalaman')
+            @yield('isi_halaman')
 
             <!-- bagian konten blog -->
             @yield('konten')

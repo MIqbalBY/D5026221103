@@ -3,15 +3,11 @@
 @section('title', "Database Nilai Kuliah")
 
 @section('judul_halaman')
-    <h2>
-        <a href = "https://www.malasngoding.com"> www.malasngoding.com </a>
-    </h2>
-
     <h3>
         Data Nilai Kuliah
     </h3>
 
-    <a href = "/nilaikuliah/tambah" class = "btn btn-primary"> Tambah Mahasiswa Baru </a>
+    <a href = "/nilai_kuliah/tambah" class = "btn btn-primary"> Tambah Mahasiswa Baru </a>
 
     <br/>
     <br/>
@@ -49,8 +45,8 @@ function angkaToHuruf($nilai)
 }
 @endphp
 
-    <table class = "table table-striped table-hover">
-        <tr>
+    <table class = "table table-bordered table-striped table-hover">
+        <tr  class = "text-center">
             <th> ID </th>
             <th> NRP </th>
             <th> NilaiAngka </th>
@@ -60,7 +56,7 @@ function angkaToHuruf($nilai)
         </tr>
 
 		@foreach($nilaikuliah as $n)
-		<tr>
+		<tr class = "text-center">
 			<td> {{ $n -> ID }} </td>
 			<td> {{ $n -> NRP }} </td>
 			<td> {{ $n -> NilaiAngka }} </td>

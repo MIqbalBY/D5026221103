@@ -1,13 +1,13 @@
 @extends('master2')
 
-@section('title', "Detail Pegawai")
+@section('title', "Detail Bolpen")
 
 @section('konten')
     <h3>
-        Detail Pegawai
+        Detail Bolpen
     </h3>
 
-    <a href = "/pegawai" class = "btn btn-primary"> Kembali </a>
+    <a href = "/bolpen" class = "btn btn-primary"> Kembali </a>
 
     <br/>
     <br/>
@@ -21,29 +21,29 @@
             <div class = "col-md-6">
                 <table class = "table table-hover">
                     <tr>
-                        <th> Nama </th>
-                        <td> {{ $pegawai->pegawai_nama }} </td>
+                        <th> Kode Bolpen </th>
+                        <td> {{ $bolpen -> kodebolpen }} </td>
                     </tr>
 
                     <tr>
-                        <th> Jabatan </th>
-                        <td> {{ $pegawai->pegawai_jabatan }} </td>
+                        <th> Merk Bolpen </th>
+                        <td> {{ $bolpen -> merkbolpen }} </td>
                     </tr>
 
                     <tr>
-                        <th> Umur </th>
-                        <td> {{ $pegawai->pegawai_umur }} </td>
+                        <th> Stock Bolpen </th>
+                        <td> {{ $bolpen -> stockbolpen }} </td>
                     </tr>
 
                     <tr>
-                        <th> Alamat </th>
-                        <td> {{ $pegawai->pegawai_alamat }} </td>
+                        <th> Tersedia </th>
+                        <td> {{ $bolpen -> tersedia }} </td>
                     </tr>
                 </table>
 
                 <br>
 
-                <a href = "/pegawai" class = "btn btn-primary float-left"> OK </a>
+                <a href = "/bolpen" class = "btn btn-primary float-left"> OK </a>
             </div>
         </div>
     </div>

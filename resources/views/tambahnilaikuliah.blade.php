@@ -1,20 +1,18 @@
 @extends('master2')
 
-@section('konten')
-    <h2>
-        <a href = "https://www.malasngoding.com"> www.malasngoding.com </a>
-    </h2>
+@section('title', "Tambah Data Mahasiswa Baru")
 
+@section('konten')
     <h3>
-        Tambah Mahasiswa
+        Tambah Data Mahasiswa Baru
     </h3>
 
-    <a href = "/nilaikuliah" class = "btn btn-primary"> Kembali </a>
+    <a href = "/nilai_kuliah" class = "btn btn-primary"> Kembali </a>
 
     <br/>
     <br/>
 
-    <form action = "/nilaikuliah/store" method = "post">
+    <form action = "/nilai_kuliah/store" method = "post">
         {{ csrf_field() }}
 
         <div class = "form-group row">

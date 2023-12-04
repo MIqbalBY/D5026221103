@@ -37,12 +37,12 @@
 			<td> <a href = "https://wa.me/085790714547"> 0857-9071-4547 </a> </td>
 		</tr>
 
-        @for($i = 1; $i < 5; $i++)
+        {{-- @for($i = 1; $i < 5; $i++)
             <tr>
                 <td> Loop Ke- </td>
                 <td> : </td>
                 <td> {{ $i }} </td>
             </tr>
-        @endfor
+        @endfor --}}
 	</table>
 @endsection

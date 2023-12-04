@@ -35,6 +35,6 @@ class NilaiKuliahController extends Controller
             ]);
 
         // Alihkan halaman ke halaman pegawai
-        return redirect('/nilaikuliah');
+        return redirect('/nilai_kuliah');
     }
 }

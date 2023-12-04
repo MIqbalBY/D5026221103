@@ -103,6 +103,16 @@ use Illuminate\Support\Facades\Route;
     Route::get('/pegawai/cari', 'App\Http\Controllers\PegawaiController@cari');
 
     // Route CRUD (Nilai Kuliah)
-    Route::get('/nilaikuliah', 'App\Http\Controllers\NilaiKuliahController@index');
-    Route::get('/nilaikuliah/tambah', 'App\Http\Controllers\NilaiKuliahController@tambah');
-    Route::post('/nilaikuliah/store', 'App\Http\Controllers\NilaiKuliahController@store');
+    Route::get('/nilai_kuliah', 'App\Http\Controllers\NilaiKuliahController@index');
+    Route::get('/nilai_kuliah/tambah', 'App\Http\Controllers\NilaiKuliahController@tambah');
+    Route::post('/nilai_kuliah/store', 'App\Http\Controllers\NilaiKuliahController@store');
+
+    // Route CRUD (Bolpen/Tugas Pra EAS Kelas D)
+    Route::get('/bolpen', 'App\Http\Controllers\BolpenController@index');
+    Route::get('/bolpen/tambah', 'App\Http\Controllers\BolpenController@tambah');
+    Route::post('/bolpen/store', 'App\Http\Controllers\BolpenController@store');
+    Route::get('/bolpen/view/{id}','App\Http\Controllers\BolpenController@view');
+    Route::get('/bolpen/edit/{id}','App\Http\Controllers\BolpenController@edit');
+    Route::post('/bolpen/update','App\Http\Controllers\BolpenController@update');
+    Route::get('/bolpen/hapus/{id}','App\Http\Controllers\BolpenController@hapus');
+    Route::get('/bolpen/cari', 'App\Http\Controllers\BolpenController@cari');

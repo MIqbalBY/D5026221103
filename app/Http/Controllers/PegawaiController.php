@@ -14,14 +14,14 @@ class PegawaiController extends Controller
         $pegawai = DB::table('pegawai') -> paginate(15);
 
         // Mengirim data pegawai ke view index
-        return view('index', ['pegawai' => $pegawai]);
+        return view('indexpegawai', ['pegawai' => $pegawai]);
     }
 
     // Method untuk menampilkan view form tambah pegawai
     public function tambah()
     {
         // Memanggil view tambah
-        return view('tambah');
+        return view('tambahpegawai');
     }
 
     // Method untuk insert data ke table pegawai
@@ -46,7 +46,7 @@ class PegawaiController extends Controller
         $pegawai = DB::table('pegawai') -> where('pegawai_id', $id) -> get();
 
         // Passing data pegawai yang didapat ke view edit.blade.php
-        return view('edit', ['pegawai' => $pegawai]);
+        return view('editpegawai', ['pegawai' => $pegawai]);
     }
 
     // Method untuk update data pegawai
@@ -86,7 +86,7 @@ class PegawaiController extends Controller
                     -> paginate();
 
     		// Mengirim data pegawai ke view index
-		return view('index', ['pegawai' => $pegawai]);
+		return view('indexpegawai', ['pegawai' => $pegawai]);
 	}
 
     public function view($id)
@@ -95,6 +95,6 @@ class PegawaiController extends Controller
         $pegawai = DB::table('pegawai') -> where('pegawai_id', $id) -> first();
 
         // Mengirim data pegawai ke view tampilkan.blade.php
-        return view('view', ['pegawai' => $pegawai]);
+        return view('viewpegawai', ['pegawai' => $pegawai]);
     }
 }

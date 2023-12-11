@@ -36,7 +36,7 @@
                 <td> {{ $p -> pegawai_jabatan }} </td>
                 <td class = "text-center"> {{ $p -> pegawai_umur }} </td>
                 <td> {{ $p -> pegawai_alamat }} </td>
-                <td class = "text-center">
+                <td class="text-center opsi-column">
                     <a href = "/pegawai/view/{{ $p -> pegawai_id }}" class = "btn btn-success"> View </a>
                     <a href = "/pegawai/edit/{{ $p -> pegawai_id }}" class = "btn btn-warning"> Edit </a>
                     <a href = "/pegawai/hapus/{{ $p -> pegawai_id }}" class = "btn btn-danger"> Hapus </a>

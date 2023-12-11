@@ -36,7 +36,7 @@
                 <td> {{ $b -> merkbolpen }} </td>
                 <td class = "text-center"> {{ $b -> stockbolpen }} </td>
                 <td class = "text-center"> {{ $b -> tersedia }} </td>
-                <td class = "text-center">
+                <td class="text-center opsi-column">
                     <a href = "/bolpen/view/{{ $b -> kodebolpen }}" class = "btn btn-success"> View </a>
                     <a href = "/bolpen/edit/{{ $b -> kodebolpen }}" class = "btn btn-warning"> Edit </a>
                     <a href = "/bolpen/hapus/{{ $b -> kodebolpen }}" class = "btn btn-danger"> Hapus </a>

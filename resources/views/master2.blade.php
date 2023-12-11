@@ -30,8 +30,13 @@
 
             img.logo
             {
-            width: 40px;
-            height: 40px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .table .opsi-column
+            {
+                white-space: nowrap;
             }
         </style>
     </head>
@@ -54,6 +59,7 @@
                             <a class = "dropdown-item" href = "/pegawai"> Tugas Pertemuan 14 (Pegawai) </a>
                             <a class = "dropdown-item" href = "/nilai_kuliah"> Tugas Pertemuan 15 (Nilai Kuliah) </a>
                             <a class = "dropdown-item" href = "/bolpen"> Tugas Pra EAS Kelas D (Bolpen) </a>
+                            <a class = "dropdown-item" href = "/combo"> EAS Kelas D Kode Soal CC (Kategori) </a>
                         </div>
                     </li>
                 </ul>

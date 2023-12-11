@@ -96,10 +96,10 @@ use Illuminate\Support\Facades\Route;
     Route::get('/pegawai', 'App\Http\Controllers\PegawaiController@index');
     Route::get('/pegawai/tambah', 'App\Http\Controllers\PegawaiController@tambah');
     Route::post('/pegawai/store', 'App\Http\Controllers\PegawaiController@store');
-    Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
-    Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
-    Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
-    Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
+    Route::get('/pegawai/view/{id}', 'App\Http\Controllers\PegawaiController@view');
+    Route::get('/pegawai/edit/{id}', 'App\Http\Controllers\PegawaiController@edit');
+    Route::post('/pegawai/update', 'App\Http\Controllers\PegawaiController@update');
+    Route::get('/pegawai/hapus/{id}', 'App\Http\Controllers\PegawaiController@hapus');
     Route::get('/pegawai/cari', 'App\Http\Controllers\PegawaiController@cari');
 
     // Route CRUD (Nilai Kuliah)
@@ -111,8 +111,12 @@ use Illuminate\Support\Facades\Route;
     Route::get('/bolpen', 'App\Http\Controllers\BolpenController@index');
     Route::get('/bolpen/tambah', 'App\Http\Controllers\BolpenController@tambah');
     Route::post('/bolpen/store', 'App\Http\Controllers\BolpenController@store');
-    Route::get('/bolpen/view/{id}','App\Http\Controllers\BolpenController@view');
-    Route::get('/bolpen/edit/{id}','App\Http\Controllers\BolpenController@edit');
-    Route::post('/bolpen/update','App\Http\Controllers\BolpenController@update');
-    Route::get('/bolpen/hapus/{id}','App\Http\Controllers\BolpenController@hapus');
+    Route::get('/bolpen/view/{id}', 'App\Http\Controllers\BolpenController@view');
+    Route::get('/bolpen/edit/{id}', 'App\Http\Controllers\BolpenController@edit');
+    Route::post('/bolpen/update', 'App\Http\Controllers\BolpenController@update');
+    Route::get('/bolpen/hapus/{id}', 'App\Http\Controllers\BolpenController@hapus');
     Route::get('/bolpen/cari', 'App\Http\Controllers\BolpenController@cari');
+
+    // Route CRUD (Kategori/EAS Kelas D Kode Soal CC)
+    Route::get('/combo', 'App\Http\Controllers\KategoriController@index');
+    Route::get('/hasilcombo/{ID}', 'App\Http\Controllers\KategoriController@view');
